@@ -1,0 +1,133 @@
+<!-- ===============================
+PAQUETE LISTO PARA HOSTING
+SINTRAMEDICOS COLOMBIA
+HTML5 + CSS3 + JavaScript
+Incluye animaciones, navegación profesional y UX premium
+=============================== -->
+
+<!-- ================= index.html ================= -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINTRAMEDICOS Colombia | Sindicato de Servicios Médicos</title>
+  <meta name="description" content="SINTRAMEDICOS Colombia - Sindicato de Trabajadores de Servicios Médicos. Defensa laboral, servicios asistenciales y administrativos en salud.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-container">
+    <img src="img/logo.png" class="logo" alt="SINTRAMEDICOS">
+    <nav id="nav" class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto" class="btn-nav">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1 class="fade-in">SINTRAMEDICOS COLOMBIA</h1>
+    <p class="fade-in delay">Familia de Servicios Médicos – Cuidando su Salud</p>
+    <a href="#contacto" class="btn-primary fade-in delay2">Afíliate Ahora</a>
+  </div>
+</section>
+
+<section id="quienes" class="section reveal">
+  <div class="container">
+    <h2>Quiénes Somos</h2>
+    <p>SINTRAMEDICOS COLOMBIA es el Sindicato de Trabajadores de Servicios Médicos de Colombia, constituido conforme a la ley, con autonomía administrativa y compromiso social.</p>
+  </div>
+</section>
+
+<section id="servicios" class="section bg-light reveal">
+  <div class="container grid">
+    <div class="card"><i class="fas fa-user-md"></i><h3>Asistenciales</h3><p>Consulta, urgencias, hospitalización.</p></div>
+    <div class="card"><i class="fas fa-file-invoice"></i><h3>Administrativos</h3><p>Facturación, glosas, archivo clínico.</p></div>
+    <div class="card"><i class="fas fa-ambulance"></i><h3>Operativos</h3><p>Ambulancias y traslados.</p></div>
+    <div class="card"><i class="fas fa-hospital"></i><h3>APS</h3><p>Atención primaria y brigadas.</p></div>
+  </div>
+</section>
+
+<section id="beneficios" class="section reveal">
+  <div class="container">
+    <h2>Beneficios</h2>
+    <ul class="benefits">
+      <li>Representación sindical</li>
+      <li>Contratos y convenios</li>
+      <li>Capacitación continua</li>
+      <li>Bienestar laboral</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contacto" class="section bg-primary reveal">
+  <div class="container">
+    <h2>Contáctenos</h2>
+    <p>📍 Carrera 2 Este No. 8-10, Padilla – Cauca</p>
+    <p>📞 316 482 9170 | 324 564 9113</p>
+    <a href="https://wa.me/573164829170" class="btn-secondary">WhatsApp Directo</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 SINTRAMEDICOS COLOMBIA</p>
+</footer>
+
+<a href="https://wa.me/+573162885946" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- ================= css/styles.css ================= -->
+:root{
+ --primary:#0a78c2;--secondary:#3fa9f5;--light:#f4f6f8;--dark:#1f2933;--white:#fff
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:var(--light);color:var(--dark)}
+.container{max-width:1200px;margin:auto;padding:1rem}
+.header{background:linear-gradient(135deg,var(--primary),var(--secondary));position:fixed;width:100%;z-index:100}
+.nav-container{display:flex;align-items:center;justify-content:space-between}
+.nav a{color:var(--white);margin:0 .8rem;text-decoration:none;font-weight:600}
+.btn-nav{background:var(--white);color:var(--primary);padding:.4rem .9rem;border-radius:20px}
+.menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.5rem}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;text-align:center}
+.btn-primary,.btn-secondary{display:inline-block;margin-top:1rem;padding:.7rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:700}
+.btn-primary{background:#fff;color:var(--primary)}
+.btn-secondary{background:var(--secondary);color:#fff}
+.section{padding:5rem 1rem}
+.bg-light{background:#fff}
+.bg-primary{background:var(--primary);color:#fff;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.card{background:#fff;padding:1.5rem;border-radius:14px;text-align:center;transition:.4s}
+.card:hover{transform:translateY(-8px)}
+.benefits li{margin:.6rem 0}
+.footer{text-align:center;background:var(--dark);color:#fff;padding:1.5rem}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:15px;border-radius:50%;font-size:1.5rem}
+.fade-in{opacity:0;animation:fade 1s forwards}
+.delay{animation-delay:.4s}.delay2{animation-delay:.8s}
+@keyframes fade{to{opacity:1}}
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:none}
+@media(max-width:768px){.menu-btn{display:block}.nav{display:none;flex-direction:column}.nav.active{display:flex;background:var(--primary)}}
+
+<!-- ================= js/main.js ================= -->
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('nav');
+menuBtn.onclick=()=>nav.classList.toggle('active');
+
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+  reveals.forEach(r=>{
+    const top=r.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){r.classList.add('active');}
+  });
+});
